@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('https://i.imgur.com/MRfx6ax.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.time {
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time span {
+  font-size: 32px;
+}
+
+.time span.animate__animated {
+  animation: fadeInOut 1s infinite; /* Áp dụng animation cho hiệu ứng chuyển động số */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.greeting {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #4caf50;
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.weather {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  width: 200px;
+}
+
+.weather h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.weather-description {
+  font-size: 16px;
+  color: #cfd8dc;
+}
+
+.weather-temperature {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.created-by {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #cfd8dc;
+  font-size: 14px;
+  opacity: 0.8;
+}

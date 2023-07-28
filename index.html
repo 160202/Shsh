@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đếm ngược ngày sinh nhật</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Đếm ngược đến sinh nhật TPT</h1>
+    <div class="countdown" id="countdown">
+      <div class="time">
+        <span id="days" class="animate__animated"></span>
+        <span>Ngày</span>
+      </div>
+      <div class="time">
+        <span id="hours" class="animate__animated"></span>
+        <span>Giờ</span>
+      </div>
+      <div class="time">
+        <span id="minutes" class="animate__animated"></span>
+        <span>Phút</span>
+      </div>
+      <div class="time">
+        <span id="seconds" class="animate__animated"></span>
+        <span>Giây</span>
+      </div>
+    </div>
+    <p class="greeting"></p>
+    <div class="weather-container">
+      <div class="weather" id="lang-son">
+        <h2 class="weather-city">Lạng Sơn</h2>
+        <p class="weather-description"></p>
+        <p class="weather-temperature"></p>
+      </div>
+      <div class="weather" id="hanoi">
+        <h2 class="weather-city">Hà Nội</h2>
+        <p class="weather-description"></p>
+        <p class="weather-temperature"></p>
+      </div>
+    </div>
+    <p class="created-by">Created by LQ</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
